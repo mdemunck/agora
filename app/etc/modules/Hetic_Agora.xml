@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Hetic_Agora
+ * @category    Hetic
+ * @package     Hetic_Agora
+ * @copyright   Copyright (c) 2016 
+ * @license     
+ * @author      Matthieu Demunck matthieu.demunck@hetic.net
+ */
+-->
+<config>
+  <modules>
+    <Hetic_Agora>
+      <active>true</active>
+      <codePool>community</codePool>
+    </Hetic_Agora>
+  </modules>
+</config>
