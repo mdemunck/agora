@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Hetic_Agora
+ * @category    Hetic
+ * @package     Hetic_Agora
+ * @copyright   Copyright (c) 2016 
+ * @license     
+ * @author      Matthieu Demunck matthieu.demunck@hetic.net
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <agora translate="title" module="agora">
+                                        <title>Agora</title>
+                                    </agora>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
