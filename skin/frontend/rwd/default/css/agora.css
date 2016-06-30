@@ -111,17 +111,43 @@
     height: 150px;
 }
 
-.arrow-left-video, .arrow-left-photo {
+.arrow-left-video, .arrow-left-photo, .arrow-left-newNote {
     position: absolute;
     top: 60%;
     left: 0;
     width: 30px;
     height: 50px;
 }
-.arrow-right-video, .arrow-right-photo {
+.arrow-right-video, .arrow-right-photo, .arrow-right-newNote {
     position: absolute;
     top: 60%;
     right: 0;
     width: 30px;
     height: 50px;
+}
+.arrow-left-newNote {
+    left: 20px;
+}
+.arrow-right-newNote {
+    right: 20px;
+}
+
+/** New Note **/
+
+.newNote {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.newNote ul {
+    display: inline-block;
+}
+
+.newNote li {
+    height: 300px;
+    vertical-align: middle;
+}
+
+.newNote label {
+    
 }

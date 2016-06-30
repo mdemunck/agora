@@ -199,11 +199,40 @@
             </a>
             
             <div class="note">
-                <img src="<?php echo $this->getSkinUrl('images/graph.svg'); ?>" alt="graph" class="graph"></img>
+                <img src="<?php echo $this->getSkinUrl('images/graph_double.svg'); ?>" alt="graph" class="graph"></img>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis mauris eu fermentum luctus. Aenean fermentum dolor sem, sit amet porta nulla varius id. Ut pretium massa a orci pretium, vel vehicula velit convallis.</p>
                 <input type="button" class="post" value="<?php echo $this->__('POST') ?>">
             </div>
-            
+        </div>
+
+        <div class="newNote">
+            <h2><?php echo $this->__('Give your opinion !') ?></h3>
+
+            <ul>
+                <li>
+                    <input type="range" name="range1" min="0" max="20" step="1" value="10">
+                    <label for="range1"><?php echo $this->__('Range 1') ?></label>
+                </li>
+                <!-- <li>
+                    <input type="range" name="range2" min="0" max="20" step="1" value="10">
+                    <label for="range2"><?php echo $this->__('Range 2') ?></label>
+                </li>
+                <li>
+                    <input type="range" name="range3" min="0" max="20" step="1" value="10">
+                    <label for="range3"><?php echo $this->__('Range 3') ?></label>
+                </li>
+                <li>
+                    <input type="range" name="range4" min="0" max="20" step="1" value="10">
+                    <label for="range4"><?php echo $this->__('Range 4') ?></label>
+                </li>
+                <li>
+                    <input type="range" name="range5" min="0" max="20" step="1" value="10">
+                    <label for="range5"><?php echo $this->__('Range 5') ?></label>
+                </li> -->
+            </ul>
+
+            <div class="arrow-left-newNote"><a href="#"><img src="<?php echo $this->getSkinUrl('images/left-arrow.png'); ?>" width="30" height="50"></a></div>
+            <div class="arrow-right-newNote"><a href="#"><img src="<?php echo $this->getSkinUrl('images/right-arrow.png'); ?>" width="30" height="50"></a></div>
         </div>
 
         <div class="vidComment">
@@ -238,7 +267,7 @@
                 </li>
             </ul>
             <div class="arrow-left-video"><a href="#"><img src="<?php echo $this->getSkinUrl('images/left-arrow.png'); ?>" width="30" height="50"></a></div>
-            <div class="arrow-right-photo"><a href="#"><img src="<?php echo $this->getSkinUrl('images/right-arrow.png'); ?>" width="30" height="50"></a></div>
+            <div class="arrow-right-video"><a href="#"><img src="<?php echo $this->getSkinUrl('images/right-arrow.png'); ?>" width="30" height="50"></a></div>
         </div>
 
         <div class="photoComment">
@@ -271,3 +300,12 @@
         </div>
     </div>
 </div>
+
+<script>
+    jQuery('.newNote').hide();
+
+    jQuery('.post').on('click', function(){
+        jQuery('.globalNote').hide();
+        jQuery('.newNote').show();
+    });
+</script>
