@@ -193,8 +193,9 @@
     <div class="agora-product-view">
         <div class="globalNote">
             <h2><?php echo $this->__('Global note') ?></h2>
-            <a href="" class="seeAll"><?php echo $this->__('See all comments') ?>
-                <span>❰</span>
+            <a href="" class="seeAll">
+                <?php echo $this->__('See all comments') ?>
+                <img src="<?php echo $this->getSkinUrl('images/down-arrow.png'); ?>" alt="arrow-down" class="arrow-down">
             </a>
             
             <div class="note">
@@ -210,7 +211,7 @@
             <ul>
                 <li>
                     <div class="infos">
-                        <img src="" alt="badge" class="badge">
+                        <img src="<?php echo $this->getSkinUrl('images/badge.svg'); ?>" alt="badge" class="badge">
                         <p class="authorName"><?php echo $this->__('Author name 1') ?></p>
                         <p class="videoName"><?php echo $this->__('Video name 1') ?></p>
                     </div>
@@ -219,7 +220,7 @@
                 </li>
                 <li>
                     <div class="infos">
-                        <img src="" alt="badge" class="badge">
+                        <img src="<?php echo $this->getSkinUrl('images/badge.svg'); ?>" alt="badge" class="badge">
                         <p class="authorName"><?php echo $this->__('Author name 2') ?></p>
                         <p class="videoName"><?php echo $this->__('Video name 2') ?></p>
                     </div>
@@ -228,7 +229,7 @@
                 </li>
                 <li>
                     <div class="infos">
-                        <img src="" alt="badge" class="badge">
+                        <img src="<?php echo $this->getSkinUrl('images/badge.svg'); ?>" alt="badge" class="badge">
                         <p class="authorName"><?php echo $this->__('Author name 3') ?></p>
                         <p class="videoName"><?php echo $this->__('Video name 3') ?></p>
                     </div>
@@ -236,8 +237,8 @@
                     <img src="<?php echo $this->getSkinUrl('images/img.svg'); ?>" alt="video" class="video">
                 </li>
             </ul>
-            <div class="arrow-left-video"><a href="#"><</a></div>
-            <div class="arrow-right-video"><a href="#">></a></div>
+            <div class="arrow-left-video"><a href="#"><img src="<?php echo $this->getSkinUrl('images/left-arrow.png'); ?>" width="30" height="50"></a></div>
+            <div class="arrow-right-photo"><a href="#"><img src="<?php echo $this->getSkinUrl('images/right-arrow.png'); ?>" width="30" height="50"></a></div>
         </div>
 
         <div class="photoComment">
@@ -245,7 +246,6 @@
             <ul>
                 <li>
                     <div class="infos">
-                        <img src="" alt="badge" class="badge">
                         <p class="authorName"><?php echo $this->__('Author name 1') ?></p>
                     </div>
 
@@ -253,7 +253,6 @@
                 </li>
                 <li>
                     <div class="infos">
-                        <img src="" alt="badge" class="badge">
                         <p class="authorName"><?php echo $this->__('Author name 2') ?></p>
                     </div>
 
@@ -261,17 +260,14 @@
                 </li>
                 <li>
                     <div class="infos">
-                        <img src="" alt="badge" class="badge">
                         <p class="authorName"><?php echo $this->__('Author name 3') ?></p>
                     </div>
 
                     <img src="<?php echo $this->getSkinUrl('images/img.svg'); ?>" alt="photo" class="photo">
                 </li>
             </ul>
-            <div class="arrow-left-photo"><a href="#"><</a></div>
-            <div class="arrow-right-photo"><a href="#">></a></div>
+            <div class="arrow-left-photo"><a href="#"><img src="<?php echo $this->getSkinUrl('images/left-arrow.png'); ?>" width="30" height="50"></a></div>
+            <div class="arrow-right-photo"><a href="#"><img src="<?php echo $this->getSkinUrl('images/right-arrow.png'); ?>" width="30" height="50"></a></div>
         </div>
-
     </div>
-
 </div>
